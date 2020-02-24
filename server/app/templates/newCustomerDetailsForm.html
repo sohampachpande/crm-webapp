@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sujata's Design Studio</title>
+	{% include 'head.html' %}
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <br>
+    <div class="container" style="padding:40px">
+        <h3  style="text-align: center;">Customer Details</h3>
+        <br>
+        <form action="/customer/addCustomerDetails" method="GET">
+            <!-- Name  -->
+            <div class="row">
+                <div class="col-20">
+                    <label for="name">Name</label>
+                </div>
+                <div class="col-80">
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                </div>
+            </div>
+            <!-- Address  -->
+            <div class="row">
+                <div class="col-20">
+                    <label for="address">Address</label>
+                </div>
+                <div class="col-80">
+                    <textarea id="address" name="address" placeholder="Your Address" style="height:80px"></textarea>
+                </div>
+            </div>
+            <!-- Contact  -->
+            <div class="row">
+                <div class="col-20" style="width: 10%">
+                    <label for="phone">Phone</label>
+                </div>
+                <div class="col-20" style="width: 20%">
+                    <input type="text" id="phone" name="phone" placeholder="Your Phone">
+                </div>
+                <div class="col-20" style="width: 10%; padding-left: 40px;">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-20" style="width: 60%">
+                    <input type="text" id="email" name="email" placeholder="Your Email">
+                </div>
+            </div>
+            
+            <br><br>
+            <h3  style="text-align: center;"> Vertical Measurements</h3>
+            <br>
+            <div class="row">
+                <!-- Vertical Measurements 1 -->
+                <div class="column" style="width: 49%;">
+                    <div class="row">
+                        <!-- <div class="col" style="width: 20%;"></div> -->
+                        <div class="col" style="width: 20%;">
+                            <h5>Nape to</h5>
+                        </div>
+                        <div class="col" style="width: 40%;">
+                            <h6> Vertical Measurement</h6>
+                        </div>
+                        <div class="col" style="width: 40%;">
+                            <h6> Circular Measurement</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="napeToAboveBust">Above Bust</label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="napeToAboveBustVertical" name="napeToAboveBustVertical" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="napeToAboveBustCircular" name="napeToAboveBustCircular" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="napeToApex">Apex</label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="napeToApexVertical" name="napeToApexVertical" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="napeToApexCircular" name="napeToApexCircular" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="napeToWaist">Waist</label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="napeToWaistVertical" name="napeToWaistVertical" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="napeToWaistCircular" name="napeToWaistCircular" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="napeToUpperHip">Upper Hip</label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="napeToUpperHipVertical" name="napeToUpperHipVertical" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="napeToUpperHipCircular" name="napeToUpperHipCircular" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="napeToHip">Hip</label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="napeToHipVertical" name="napeToHipVertical" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="napeToHipCircular" name="napeToHipCircular" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="napeToTopLength">Top Length(Knee)</label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="napeToTopLengthVertical" name="napeToTopLengthVertical" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="napeToTopLengthCircular" name="napeToTopLengthCircular" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="napeToShortKurti">Short Kurti</label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="napeToShortKurtiVertical" name="napeToShortKurtiVertical" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="napeToShortKurtiCircular" name="napeToShortKurtiCircular" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="column" style="width: 2%;"></div>
+                <!-- Vertical Measurements 2  -->
+                <div class="column" style="width: 49%">
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <h5>Waist to</h5>
+                        </div>
+                        <div class="col" style="width: 40%;">
+                            <h6> Vertical Measurement</h6>
+                        </div>
+                        <div class="col" style="width: 40%;">
+                            <h6> Circular Measurement</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="waistToThigh">Thigh</label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="waistToThighVertical" name="waistToThighVertical" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="waistToThighCircular" name="waistToThighCircular" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="waistToMidThigh">MidThigh</label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="waistToMidThighVertical" name="waistToMidThighVertical" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="waistToMidThighCircular" name="waistToMidThighCircular" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="waistToKnee">Knee</label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="waistToKneeVertical" name="waistToKneeVertical" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="waistToKneeCircular" name="waistToKneeCircular" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="waistCalf">Calf</label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="waistCalfVertical" name="waistCalfVertical" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="waistCalfCircular" name="waistCalfCircular" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="waistToAnkle">Ankle</label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="waistToAnkleVertical" name="waistToAnkleVertical" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="waistToAnkleCircular" name="waistToAnkleCircular" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="waistToFloor">Floor</label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="waistToFloorVertical" name="waistToFloorVertical" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="waistToFloorCircular" name="waistToFloorCircular" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        
+                    </div>
+                </div>  
+            </div>
+
+            <br>
+
+            <div class="row">         
+                <!-- Sleeve Measurements        -->
+                <div class="column" style="width: 36%;">
+                    <h3  style="text-align: center;"> Sleeve <br/> Measurements</h3>
+                    <div class="row">
+                        <!-- <div class="col" style="width: 20%;"></div> -->
+                        <div class="col" style="width: 20%;"></div>
+                        <div class="col" style="width: 40%;">
+                            <h6> Lengthwise</h6>
+                        </div>
+                        <div class="col" style="width: 40%;">
+                            <h6> Round</h6>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="caps">Caps</label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="capsLengthwise" name="capsLengthwise" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="capsRound" name="capsRound" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="shortSleeve">Short Sleeve</label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="shortSleeveLengthwise" name="shortSleeveLengthwise" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="shortSleeveRound" name="shortSleeveRound" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="elbow">Elbow</label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="elbowLengthwise" name="elbowLengthwise" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="elbowRound" name="elbowRound" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="threeQuaters">3/4 <sup>th</sup></label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="threeQuatersLengthwise" name="threeQuatersLengthwise" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="threeQuatersRound" name="threeQuatersRound" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="full">Full</sup></label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="fullLengthwise" name="fullLengthwise" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="fullRound" name="fullRound" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 20%;">
+                            <label for="armHole">Arm Hole</label>
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="armHoleLengthwise" name="armHoleLengthwise" placeholder="">
+                        </div>
+                        <div class="col" style="width: 40%">
+                            <input type="text" id="armHoleRound" name="armHoleRound" placeholder="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gap -->
+                <div class="column" style="width: 2%">  </div>
+                
+                <!-- Horizontal Measurements -->
+                <div class="column" style="width: 30%;">
+                    <h3  style="text-align: center;"> Horizontal Measurements</h3>
+                    <div class="row">
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="width: 40%">
+                            <label for="shoulder">Shoulder</label>
+                        </div>
+                        
+                        <div class="col" style="width: 60%">
+                            <input type="text" id="shoulder" name="shoulder" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 40%">
+                            <label for="acrossFront">across Front</label>
+                        </div>
+                        
+                        <div class="col" style="width: 60%">
+                            <input type="text" id="acrossFront" name="acrossFront" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 40%">
+                            <label for="acrossBack">across Back</label>
+                        </div>
+                        
+                        <div class="col" style="width: 60%">
+                            <input type="text" id="acrossBack" name="acrossBack" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 40%">
+                            <label for="shoulderWidth">Shoulder Width</label>
+                        </div>
+                        
+                        <div class="col" style="width: 60%">
+                            <input type="text" id="shoulderWidth" name="shoulderWidth" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col" style="width: 40%">
+                            <label for="acrossFrontForSleeveless">across Front For Sleeveless</label>
+                        </div>
+                        
+                        <div class="col" style="width: 60%">
+                            <input type="text" id="acrossFrontForSleeveless" name="acrossFrontForSleeveless" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gap -->
+                <div class="column" style="width: 2%"> <br> </div>
+                
+                <!-- Neck Depth Measurements -->
+                <div class="column" style="width: 30%">  
+                    <h3  style="text-align: center;"> Neck Depth Measurements</h3>
+                    <div class="row">
+                        <br>
+                        <h4>For Blouse</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="width: 40%">
+                            <label for="neckDepthForBlouseFront">Front</label>
+                        </div>
+                        <div class="col" style="width: 60%">
+                            <input type="text" id="neckDepthForBlouseFront" name="neckDepthForBlouseFront" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="width: 40%">
+                            <label for="neckDepthForBlouseBack">Back</label>
+                        </div>
+                        <div class="col" style="width: 60%">
+                            <input type="text" id="neckDepthForBlouseBack" name="neckDepthForBlouseBack" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <br>
+                        <h4>For Dress</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="width: 40%">
+                            <label for="neckDepthForDressFront">Front</label>
+                        </div>
+                        <div class="col" style="width: 60%">
+                            <input type="text" id="neckDepthForDressFront" name="neckDepthForDressFront" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="width: 40%">
+                            <label for="neckDepthForDressBack">Back</label>
+                        </div>
+                        <div class="col" style="width: 60%">
+                            <input type="text" id="neckDepthForDressBack" name="neckDepthForDressBack" placeholder="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <br>
+
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
