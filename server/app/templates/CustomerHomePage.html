@@ -7,10 +7,13 @@
 <body>
     {% include 'navbar.html' %}
     <div class="container" style="padding: 40px;">
-        <form action="/customer/search">
+        <form action="/customer/searchCustomerDetails">
             <div class="row">
-                <div class="col-80">
-                    <input type="text" id="query" name="query" placeholder="Client Name">
+                <div class="col-40">
+                    <input type="text" id="name" name="name" placeholder="Client Name">
+                </div>
+                <div class="col-40">
+                    <input type="text" id="phone" name="phone" placeholder="Client Phone Number">
                 </div>
                 <!-- <div class="col" style="width: 1%;"></div> -->
                 <div class="col-20" >

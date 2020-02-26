@@ -8,15 +8,15 @@
 }
 
 .button {
+    text-decoration-color: white;
     border: none;
-    color: white;
-    padding: 15px 32px;
+    color: green;
+    background: green;
+    padding: 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     width: 100%;
-    height: calc(3rem + 2px) !important;
   }
 
 
@@ -116,11 +116,29 @@ input[type=submit]:hover {
 
 .col-20 {
   float: left;
-  width: 10%;
+  width: 20%;
+  margin-top: 6px;
+}
+
+.col-30 {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+}
+
+.col-40 {
+  float: left;
+  width: 40%;
   margin-top: 6px;
 }
 
 .col-80 {
+  float: left;
+  width: 80%;
+  margin-top: 6px;
+}
+
+.col-90 {
   float: left;
   width: 90%;
   margin-top: 6px;
@@ -177,4 +195,15 @@ hr.vertical {
   height:100%; /* you might need some positioning for this to work, see other questions about 100% height */
   width:0;
   border:1px solid black;
+}
+
+.row-bordered {
+  border: 2px;
+}
+
+.box {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }

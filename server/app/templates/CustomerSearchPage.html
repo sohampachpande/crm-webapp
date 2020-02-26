@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<div>
+<head>
+	<title>Sujata's Design Studio</title>
+	{% include 'head.html' %}
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="container" style="padding: 40px;">
+        <form action="/customer/searchCustomerDetails">
+            <div class="row">
+                <div class="col-40">
+                    <input type="text" id="name" name="name" placeholder= {{ customerName }}>
+                </div>
+                <div class="col-40">
+                    <input type="text" id="phone" name="phone" placeholder={{ customerPhone }}>
+                </div>
+                <!-- <div class="col" style="width: 1%;"></div> -->
+                <div class="col-20" >
+                    <input type="submit" value="Search">
+                </div>
+            </div>
+        </form> 
+
+        <br><br>
+        <h3>Search Results:</h3> 
+        <hr>
+
+        <div class="row-bordered">
+            <div class="col-40">
+                <h6>Name</h6>
+            </div>
+            <div class="col-30">
+                <h6>Phone</h6>
+            </div>
+            <div class="col-30">
+                <h6>  </h6> 
+            </div>
+
+        </div>
+        <br>
+        <hr>
+
+        {% for client in customerData %}
+        <div class="row-bordered">
+            <div class="col-40">
+                <h6>{{ client["name"] }}</h6>
+            </div>
+            <div class="col-30">
+                <h6>{{ client["phone"] }}</h6>
+            </div>
+            <div class="col-30">
+                <a class="box" href="/customer/getCustomerDetails?phone={{client['phone']}}"> Click here for Client Details </a> 
+            </div>
+
+        </div>
+        <br> <br>
+        {% endfor %}
+
+        <hr>
+
+        <form action="/customer/new">
+            <div class="row">
+                <!-- Add new Customer -->
+                <div class="col-100" >
+                    <input type="submit" value="Add New Customer Data">
+                </div>
+            </div>
+        </form>
+    
+    </div>
+</body>
